@@ -322,22 +322,8 @@ for keys in chosen_B:
     description_B = chosen_B['description'] 
     country_B= chosen_B['country'] 
     followers_B = chosen_B["follower_count"]
-
-print("Welcome To The HIGHER LOWER Game... \n")
-print(f"Compare A: {nameA}, a {descriptionA}, from {countryA} \n")
-
-print("VS \n")
-
-print(f"Compare B: {name_B}, a {description_B}, from {country_B} \n")
-
-score = 0
-user_correct = True
-        
+    
 def next_round():
-    
-    re_assign()
-
-    
     chosen_B = (random.choice(data))
     for keys in chosen_B:
         name_B = chosen_B['name'] 
@@ -351,6 +337,20 @@ def next_round():
 
     print(f"Compare B: {name_B}, a {description_B}, from {country_B} \n")
 
+    
+    
+
+print("Welcome To The HIGHER LOWER Game... \n")
+print(f"Compare A: {nameC}, a {descriptionC}, from {countryC} \n")
+
+print("VS \n")
+
+print(f"Compare B: {name_B}, a {description_B}, from {country_B} \
+    n")
+
+score = 0
+user_correct = True
+        
 
 
 
@@ -366,6 +366,13 @@ while user_correct == True:
         next_round()
     elif Your_answer != 'A' and Your_answer != 'B':
         print("Invalid Input")
+        user_correct = False 
+    elif Your_answer == 'A' and followers_B > followers:
+        print("")
+        user_correct = False
+    elif Your_answer == 'B' and followers > followers_B:
+        print("")
+        user_correct = False
     else:
         user_correct = False
 
@@ -373,9 +380,7 @@ while user_correct == True:
     print(f"Your current score is {score}")
     
 
-def re_assign():    
-    nameA= name_B 
-    descriptionA = description_B 
-    countryA= country_B 
-    followersA = followers_B
-    
+    nameC = name_B 
+    descriptionC = description_B 
+    countryC = country_B 
+    followers = followers_B

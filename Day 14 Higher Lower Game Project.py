@@ -307,80 +307,119 @@ data = [
 
 
 
+# # AUTHOR PHENSIC ME 😊
 
 
-chosen = (random.choice(data))
-for keys in chosen:
-    nameA = chosen['name'] 
-    descriptionA = chosen['description'] 
-    countryA = chosen['country'] 
-    followers = chosen["follower_count"]
+# chosen = (random.choice(data))
+# for keys in chosen:
+#     nameA = chosen['name'] 
+#     descriptionA = chosen['description'] 
+#     countryA = chosen['country'] 
+#     followers = chosen["follower_count"]
     
-chosen_B = (random.choice(data))
-for keys in chosen_B:
-    name_B = chosen_B['name'] 
-    description_B = chosen_B['description'] 
-    country_B= chosen_B['country'] 
-    followers_B = chosen_B["follower_count"]
+# chosen_B = (random.choice(data))
+# for keys in chosen_B:
+#     name_B = chosen_B['name'] 
+#     description_B = chosen_B['description'] 
+#     country_B= chosen_B['country'] 
+#     followers_B = chosen_B["follower_count"]
     
-def next_round():
-    chosen_B = (random.choice(data))
-    for keys in chosen_B:
-        name_B = chosen_B['name'] 
-        description_B = chosen_B['description'] 
-        country_B= chosen_B['country'] 
-        followers_B = chosen_B["follower_count"]
-
-    print(f"Compare A: {nameA}, a {descriptionA}, from {countryA} \n")
-
-    print("VS \n")
-
-    print(f"Compare B: {name_B}, a {description_B}, from {country_B} \n")
-
+# def next_round():
+#     """Generates another set of random account to ask the user """
+#     global name_B, description_B, country_B, followers_B
+#     nameA = name_B 
+#     descriptionA = description_B 
+#     countryA = country_B 
+#     followers = followers_B
     
-    
+#     chosen_B = (random.choice(data))
+#     for keys in chosen_B:
+#         name_B = chosen_B['name'] 
+#         description_B = chosen_B['description'] 
+#         country_B= chosen_B['country']
+#         followers_B = chosen_B["follower_count"]
 
-print("Welcome To The HIGHER LOWER Game... \n")
-print(f"Compare A: {nameC}, a {descriptionC}, from {countryC} \n")
+#     print(f"Compare A: {nameA}, a {descriptionA}, from {countryA} \n")
 
-print("VS \n")
+#     print("VS \n")
 
-print(f"Compare B: {name_B}, a {description_B}, from {country_B} \
-    n")
+#     print(f"Compare B: {name_B}, a {description_B}, from {country_B} \n")
 
-score = 0
-user_correct = True
+
+# print("Welcome To The HIGHER LOWER Game... \n")
+# print(f"Compare A: {nameA}, a {descriptionA}, from {countryA} \n")
+
+# print("VS \n")
+
+# print(f"Compare B: {name_B}, a {description_B}, from {country_B} \n")
+
+# score = 0
+# user_correct = True
         
 
-
-
-while user_correct == True:
+# while user_correct == True:
     
-    Your_answer = input("Who has more followers 'A' or 'B': ")
+#     Your_answer = input("Who has more followers 'A' or 'B': ")
 
-    if Your_answer == "A" and followers > followers_B:
-        score += 1
-        next_round()
-    elif Your_answer == "B" and followers_B > followers:
-        score += 1
-        next_round()
-    elif Your_answer != 'A' and Your_answer != 'B':
-        print("Invalid Input")
-        user_correct = False 
-    elif Your_answer == 'A' and followers_B > followers:
-        print("")
-        user_correct = False
-    elif Your_answer == 'B' and followers > followers_B:
-        print("")
-        user_correct = False
-    else:
-        user_correct = False
+#     if Your_answer == "A" and followers > followers_B:
+#         score += 1
+#         next_round()
+#         print("Your Right!")
+#         print(f"Your current score is {score}")
+#     elif Your_answer == "B" and followers_B > followers:
+#         score += 1
+#         next_round()
+#         print("Your Right!")
+#         print(f"Your current score is {score}")
+#     elif Your_answer != 'A' and Your_answer != 'B':
+#         print("Invalid Input")
+#         user_correct = False
+#     elif Your_answer == 'A' and followers_B > followers:
+#         print("You're Wrong")
+#         user_correct = False
+#     elif Your_answer == 'B' and followers > followers_B:
+#         print("You're Wrong")
+#         user_correct = False
+#     else:
+#         user_correct = False
 
-        
-    print(f"Your current score is {score}")
+
+    
+# COURSES SOLUTION
+
+# Generate a random account from the game data
+account_a = random.choice(data)
+account_b = random.choice(data)
+if account_a == account_b: 
+    account_b = random.choice(data)
     
 
-    nameC = name_B 
-    descriptionC = description_B 
-    countryC = country_B 
-    followers = followers_B
+def format_data(account):
+    """Format the account into a printable format"""
+    account_name = account_a['name']
+    account_descr = account_a['description']
+    account_country = account_a['country']
+    return(f"{account_name}, a {account_descr} from {account_country}")
+
+print("Compare A: {format_data(account_a)}.")
+print("VS")
+print("Compare A: {format_data(account_b)}.")
+
+# Ask the user for a guess.
+input("Who ahs more followers? Type 'A' or 'B': ").lower()
+
+# Check if user is correct
+## Get follower count of each account
+## Use the if statement if user is correct
+
+
+# Give user feedback on their guess.
+
+
+# Score keeping.
+
+# Make the game repeatable.
+
+
+# Making the account at position B become the next at position
+

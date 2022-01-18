@@ -30,22 +30,18 @@ resources = {
     "coffee": 100.
 }
 
-
 your_order = input("what do you want: ")
-
-
-def use_this(order=your_order):
-    for items in MENU:
-        order_water = order["water"]
-        order_milk = order["milk"]
-        order_coffee = order["coffee"]
-        print(order_water)
-        print(order_milk)
-        print(order_coffee)
-
-
+for items in MENU:
+    order_water = your_order["water"]
+    order_milk = your_order["milk"]
+    order_coffee = "cappuccino"["coffee"]
+    print(order_water)
+    print(order_milk)
+    print(order_coffee)
+if your_order != "cappuccino" or "cappuccino" !="milk" or "cappuccino" != "coffee":
+    print("Invalid Input")
 # TODO: 1. print a report of all the coffee's resources
-# if your_order == "cappuccino":
+
 water = resources["water"]
 milk = resources["milk"]
 coffee = resources["coffee"]
@@ -56,7 +52,11 @@ print(f"coffee: {coffee}ml")
 
 
 # TODO: 2. Check that the resource are sufficient to make the drink order?
+if order_water < water or order_milk < milk or order_coffee < coffee:
+    print("Insufficient Ingredients")
 
 # TODO: 3. Process coins
+payment = input("Pay for the drink: ")
 # TODO: 4. Check transaction successful
+
 # TODO: 5. Make Coffee

@@ -10,20 +10,20 @@
 #         if i == 20:
 #             print("You get it")
 # my_function()
-        
+
 # 2. REPRODUCING THE BUG
 
 # from random import randint 
-# dice_imgs = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣"]
+# dice_img = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣"]
 # dice_num = randint(0, 5)          # CHANGED 6 TO 5 
-# print(dice_imgs[dice_num])
-        
+# print(dice_img[dice_num])
+
 
 # 3. PLAY COMPUTER
 
 # year = int(input("What's your year of birth? "))
 # if year > 1980 and year <= 1994:
-#     print("You're a Millenial.")
+#     print("You're a Millennial.")
 # elif year >= 1994:                  # ADDED THE '=' SIGN 
 #     print("You are a Gen Z.")
 
@@ -52,8 +52,8 @@
 #         new_item = item * 2
 #         b_list.append(new_item)   # ADDED AN INDENT 
 #     print(b_list)
-    
-    
+
+
 # mutate([1, 2, 3, 5, 8, 13])       # REMOVED AN INDENT
 
 # DEBUGGING FINAL TECHNIQUES
@@ -67,7 +67,6 @@
 # 10. ASK STACKOVERFLOW
 
 
-
 # # DEBUG ODD OR EVEN EXERCISE
 
 # number = int(input("Which nymber do you want to check?"))
@@ -76,7 +75,7 @@
 #     print("This is en even number.")
 # else:
 #     print("This is an odd number.")
-    
+
 
 # # DEBUG LEAP YEAR EXERCISE
 
@@ -92,8 +91,6 @@
 #         print("Leap year.")
 # else:
 #     print("Not leap year.")
-    
-
 
 
 # # DEBUG FIZZ BUZZ EXERCISE
@@ -107,9 +104,3 @@
 #             print("Buzz")
 #     else:
 #         print(number)  # REMOVED THE '[]' LIST SQUARE BRACKET
-    
-
-
-
-
-

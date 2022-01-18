@@ -1,7 +1,9 @@
-from pickle import FALSE
+from operator import truediv
+from pickle import FALSE, TRUE
 import random
 
 from random import randint
+
 data = [
     {
         'name': 'Instagram',
@@ -306,7 +308,6 @@ data = [
 ]
 
 
-
 # # AUTHOR PHENSIC ME 😊
 
 
@@ -316,14 +317,14 @@ data = [
 #     descriptionA = chosen['description'] 
 #     countryA = chosen['country'] 
 #     followers = chosen["follower_count"]
-    
+
 # chosen_B = (random.choice(data))
 # for keys in chosen_B:
 #     name_B = chosen_B['name'] 
 #     description_B = chosen_B['description'] 
 #     country_B= chosen_B['country'] 
 #     followers_B = chosen_B["follower_count"]
-    
+
 # def next_round():
 #     """Generates another set of random account to ask the user """
 #     global name_B, description_B, country_B, followers_B
@@ -331,7 +332,7 @@ data = [
 #     descriptionA = description_B 
 #     countryA = country_B 
 #     followers = followers_B
-    
+
 #     chosen_B = (random.choice(data))
 #     for keys in chosen_B:
 #         name_B = chosen_B['name'] 
@@ -355,10 +356,10 @@ data = [
 
 # score = 0
 # user_correct = True
-        
+
 
 # while user_correct == True:
-    
+
 #     Your_answer = input("Who has more followers 'A' or 'B': ")
 
 #     if Your_answer == "A" and followers > followers_B:
@@ -384,42 +385,61 @@ data = [
 #         user_correct = False
 
 
-    
 # COURSES SOLUTION
-
-# Generate a random account from the game data
-account_a = random.choice(data)
-account_b = random.choice(data)
-if account_a == account_b: 
-    account_b = random.choice(data)
-    
-
 def format_data(account):
     """Format the account into a printable format"""
-    account_name = account_a['name']
-    account_descr = account_a['description']
-    account_country = account_a['country']
-    return(f"{account_name}, a {account_descr} from {account_country}")
-
-print("Compare A: {format_data(account_a)}.")
-print("VS")
-print("Compare A: {format_data(account_b)}.")
-
-# Ask the user for a guess.
-input("Who ahs more followers? Type 'A' or 'B': ").lower()
-
-# Check if user is correct
-## Get follower count of each account
-## Use the if statement if user is correct
+    account_name = account['name']
+    account_descr = account['description']
+    account_country = account['country']
+    return f"{account_name}, a {account_descr} from {account_country}"
 
 
-# Give user feedback on their guess.
+def check_answer(guess, a_followers, b_followers):
+    """Takes the user guess and follower and returns if they got it right."""
+    if a_followers > b_followers:
+        return guess == "a"
+    else:
+        return guess == "b"
+
+    # Score keeping
 
 
-# Score keeping.
+score = 0
+game_should_continue = True
+# account_b = random.choice(data)
+account_a = random.choice(data)
+account_b = random.choice(data)
 
 # Make the game repeatable.
+while game_should_continue:
+    # Generate a random account from the game data
+    # Making the account at position B become the next at position
+    account_a = account_b
+    account_b = random.choice(data)
 
+    if account_a == account_b:
+        account_b = random.choice(data)
 
-# Making the account at position B become the next at position
+    print(f"Compare A: {format_data(account_a)}.")
+    print("VS")
+    print(f"Compare B: {format_data(account_b)}.")
 
+    # Ask the user for a guess.
+    guess = input("Who ha more followers? Type 'A' or 'B': ").lower()
+
+    # Check if user is correct
+    # --Get follower count of each account
+    a_follower_count = account_a['follower_count']
+    b_follower_count = account_a['follower_count']
+    is_correct = check_answer(guess, a_follower_count, b_follower_count)
+
+    # Give user feedback on their guess.
+    # --Use the "if statement" if user is correct
+    if is_correct:
+        score += 1
+        print(f"Your correct! Current score {score}")
+    else:
+        game_should_continue = False
+        print("Sorry, that's wrong. Final score {score}")
+
+# FINITE

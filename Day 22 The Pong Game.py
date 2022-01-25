@@ -1,11 +1,11 @@
 from turtle import Turtle, Screen
 
-
-
-class paddle(Turtle):
-    super().__init__()
-    
-        def 
+#
+#
+# class paddle(Turtle):
+#     super().__init__()
+#
+#         def
 
 
 screen = Screen()
@@ -20,6 +20,7 @@ paddle.shapesize(stretch_wid = 5,stretch_len=1)
 paddle.color("white")
 paddle.penup()
 paddle.goto(350, 0)
+
 
 def go_up():
     new_y = paddle.ycor() + 20 

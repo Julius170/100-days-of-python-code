@@ -33,9 +33,15 @@ class Snake:
         new_oscar.goto(position)
         self.oscars.append(new_oscar)
 
+    def reset(self):
+        for _ in self.oscars:
+            _.goto(5000, 5000)
+        self.oscars.clear()
+        self.create_snake()
+        self.head = self.oscars[0]
+
     def extend(self):
         self.add_segment(self.oscars[-1].position())
-        print("Extending")
 
     def move(self):
         for oscar_num in range(len(STARTING_POSITION) - 1, 0, -1):
@@ -83,18 +89,30 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
+        with open('data.txt') as data:
+            self.high_score = int(data.read())
         self.color("white")
         self.penup()
         self.goto(0, 270)
         self.hideturtle()
         self.update_scoreboard()
 
-    def update_scoreboard(self):
-        self.write(f"Score: {self.score}", align=ALIGNMENT, font=FONT)
+    def reset(self):
+        if self.score > self.high_score:
+            self.high_score = self.score
+            with open('data.txt', mode='w')as data:
+                data.write(f"{self.high_score}")
 
-    def game_over(self):
-        self.goto(0, 0)
-        self.write("GAME OVER", align=ALIGNMENT, font=FONT)
+        self.score = 0
+        self.update_scoreboard()
+
+    def update_scoreboard(self):
+        self.clear()
+        self.write(f"Score: {self.score} High score: {self.high_score}", align=ALIGNMENT, font=FONT)
+
+    # def game_over(self):
+    #     self.goto(0, 0)
+    #     self.write("GAME OVER", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
         self.score += 1
@@ -133,16 +151,21 @@ while game_is_on:
         scoreboard.increase_score()
 
     # DETECT COLLISION WITH WALL
-    if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
-        game_is_on = False
-        scoreboard.game_over()
+    if snake.head.xcor() > 290 or snake.head.xcor() < -300 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
+        scoreboard.reset()
+        snake.reset()
+        # game_is_on = False
+        # scoreboard.game_over()
 
         # DETECT COLLISION WITH TAIL
         for segment in snake.oscars:
             if segment == snake.head:
                 pass
-            if snake.head.distance < 10:
-                game_is_on = False
-                scoreboard.game_over()
+            elif snake.head.distance(segment) < 10:
+                scoreboard.reset()
+                snake.reset()
+
+                # game_is_on = False
+                # scoreboard.game_over()
 
 screen.exitonclick()

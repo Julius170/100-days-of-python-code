@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d25fc22-e84c-40f3-97f7-bbca989c0274" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Day 23 Turtle Crossing Road.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 24 Local File System.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 25 CSV files and Pandas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day 24 last file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day 24 letters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day 24 names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/50_states.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 25 CSV and Pandas Library.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 26 Lists and Dictionary Comp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blank_states_img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day 25 weather_data_csv.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/states_to_learn.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Phensic002.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Phensic002.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 20_&amp;_21 Snake Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 20_&amp;_21 Snake Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 22 The Pong Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 22 The Pong Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tempCodeRunnerFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 25 CSV files and Pandas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day 24 last file.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Day 09 Dictionaries and Nesting.py" root0="FORCE_HIGHLIGHTING" />
@@ -53,8 +63,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flask_mongo_db_user_login" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="Python.Day 25 CSV files and Pandas">
+  <component name="RunManager" selected="Python.Day 25 CSV and Pandas Library">
     <configuration name="Day 20_&amp;_21 Snake Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Day 25 CSV files and Pandas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Day 25 CSV and Pandas Library" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -130,7 +142,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 25 CSV files and Pandas.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 25 CSV and Pandas Library.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,19 +151,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tempCodeRunnerFile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="day 25 weather_data_csv.csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Phensic002\AppData\Local\Microsoft\WindowsApps\python3.9.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tempCodeRunnerFile.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Phensic002\OneDrive\Documents\GitHub\100 Days of Python\day 25 weather_data_csv.csv" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Day 25 CSV files and Pandas" />
+        <item itemvalue="Python.Day 25 CSV and Pandas Library" />
+        <item itemvalue="Python.day 25 weather_data_csv.csv" />
         <item itemvalue="Python.Day 24 Local File System" />
         <item itemvalue="Python.Day 20_&amp;_21 Snake Game" />
         <item itemvalue="Python.uycfpuydoytdotdo" />
-        <item itemvalue="Python.tempCodeRunnerFile" />
       </list>
     </recent_temporary>
   </component>

@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d25fc22-e84c-40f3-97f7-bbca989c0274" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 26 Lists and Dictionary Comp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 26 Lists and Dictionary Comp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 27 GUI wih Tkinter &amp; Funtion Arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 27 GUI wih Tkinter &amp; Funtion Arguments.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,28 +55,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flask_mongo_db_user_login" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Day 26 Lists and Dictionary Comp">
-    <configuration name="Day 20_&amp;_21 Snake Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Phensic002\AppData\Local\Microsoft\WindowsApps\python3.9.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 20_&amp;_21 Snake Game.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Day 27 GUI wih Tkinter &amp; Funtion Arguments">
     <configuration name="Day 23 Turtle Crossing Road" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -161,6 +140,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Day 27 GUI wih Tkinter &amp; Funtion Arguments" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Phensic002\AppData\Local\Microsoft\WindowsApps\python3.9.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 27 GUI wih Tkinter &amp; Funtion Arguments.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="day 25 weather_data_csv.csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Day 27 GUI wih Tkinter &amp; Funtion Arguments" />
         <item itemvalue="Python.Day 26 Lists and Dictionary Comp" />
         <item itemvalue="Python.Day 25 CSV and Pandas Library" />
         <item itemvalue="Python.day 25 weather_data_csv.csv" />
         <item itemvalue="Python.Day 24 Local File System" />
-        <item itemvalue="Python.Day 20_&amp;_21 Snake Game" />
       </list>
     </recent_temporary>
   </component>
@@ -222,13 +222,28 @@
       <option name="project" value="LOCAL" />
       <updated>1643758722100</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="day 26/27">
+      <created>1643770477599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643770477600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="day 26/27">
+      <created>1643770499800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643770499800</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Day 22 added" />
     <MESSAGE value="up till day 26 added" />
-    <option name="LAST_COMMIT_MESSAGE" value="up till day 26 added" />
+    <MESSAGE value="day 26/27" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 26/27" />
   </component>
 </project>

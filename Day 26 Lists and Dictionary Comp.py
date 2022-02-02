@@ -107,7 +107,6 @@
 #     print(row.students == "Angela" )
 
 
-
 # DAY 26 PROJECT (WHAT IS YOUR NAME)
 
 
@@ -116,11 +115,11 @@ import pandas
 data = pandas.read_csv("NATO_phonetic_alphabets.csv")
 
 dictionary = (data.to_dict())
-new_dict = {row.letter:row.code for (index, row) in data.iterrows()}
+new_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 
 word = input("Enter a word: ").upper()
 
-output_list = (new_dict[letters] for letters in word) 
+output_list = (new_dict[letters] for letters in word)
 
 print(output_list)
 

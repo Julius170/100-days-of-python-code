@@ -7,7 +7,7 @@ from tkinter import *
 from turtle import width, window_width
 
 window = Tk()
-window.title("My Firstt GUI")
+window.title("My First GUI")
 window.minsize(width=500, height=300)
 
 

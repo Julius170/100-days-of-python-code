@@ -1,4 +1,4 @@
-# BUILDING A UNIT CONVERTER AS THE INAL PROJECT FOR THIS DAY USING A GUI
+# BUILDING A UNIT CONVERTER AS THE FINAL PROJECT FOR THIS DAY USING A GUI
 
 
 # PIRATES OF SILICON VALLEY 
@@ -7,8 +7,10 @@ from tkinter import *
 from turtle import width, window_width
 
 window = Tk()
-window.title("My First GUI")
+window.title("Miles to Kilometer Converter")
 window.minsize(width=500, height=300)
+# ADDING PADDING
+window.config(padx=20, pady=20)
 
 
 # LABELS
@@ -166,27 +168,27 @@ window.minsize(width=500, height=300)
 # listbox.pack()
 
 
-def button_clicked():
-    print("I got clicked")
-    # new_label.config(text="new_text")
+# def button_clicked():
+#     print("I got clicked")
+#     # new_label.config(text="new_text")
 
 
-# LABEL
-my_label = Label(text="I am a Label", font=("Ariel", 24, "bold"))
-my_label.grid(column=0, row=0)
+# # LABEL
+# my_label = Label(text="I am a Label", font=("Ariel", 24, "bold"))
+# my_label.grid(column=0, row=0)
 
-# BUTTON
-button = Button(text="Click Me", command=button_clicked)
-button.grid(column=1, row=1)
+# # BUTTON
+# button = Button(text="Click Me", command=button_clicked)
+# button.grid(column=1, row=1)
 
-# A NEW BUTTON
-button = Button(text="New Button", command=button_clicked)
-button.grid(column=2, row=0)
+# # A NEW BUTTON
+# button = Button(text="New Button", command=button_clicked)
+# button.grid(column=2, row=0)
 
-# ENTRY
-input = Entry(width=10)
-print(input.get())
-input.grid(column=3, row=2)
+# # ENTRY
+# input = Entry(width=10)
+# print(input.get())
+# input.grid(column=3, row=2)
 
 # PACK, PLACE & GRID (DETERMINES LAYOUTS MANAGEMENT)
 # PLACE UNLIKE PACK WORKS WITH PRECISION
@@ -194,4 +196,33 @@ input.grid(column=3, row=2)
 # WARNING: GRIDS ARE NEVER TO BE USER WITH PACKS IN THE SAME WIDGET
 
 
+# EXERCISE: MILE TO KM CONVERTER
+
+def miles_to_kilo():
+    miles = float(miles_input.get())
+    km = round(miles * 1.609)
+    kilometer_result.config(text=f"{km}")
+
+
+# ENTRY
+miles_input = Entry(width=10)
+print(miles_input.get)
+miles_input.grid(column=1, row=0)
+
+# LABELS
+mile_label = Label(text="Mile", font=("Courier", 10, "bold"))
+mile_label.grid(column=2, row=0)
+
+is_equal = Label(text="is equal to: ", )
+is_equal.grid(column=2, row=0)
+
+kilometer_result = Label(text="0")
+kilometer_result.grid(column=1, row=1)
+
+# BUTTON
+calculate_button = Button(text='Calculate', command=miles_to_kilo)
+calculate_button.grid(column=1, row=2)
+
 window.mainloop()
+
+# FINITE

@@ -1,10 +1,8 @@
 # BUILDING A POMODORO APP
-from itertools import count
 from tkinter import *
 import math
-from urllib import response
 
-from click import command
+
 
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -31,7 +29,7 @@ def reset_timer():
 def start_timer():
     global reps
     reps += 1
-    work_sec = WORK_MIN = 60
+    work_sec = 60
     short_break_sec = SHORT_BREAK_MIN * 60
     long_break_sec = LONG_BREAK_MIN * 60
     count_down(5 * 60)
@@ -91,6 +89,6 @@ reset_button.grid(column=2, row=2, highlightthickness=0, command=reset_timer)
 check_mark = Label(fg=GREEN, bg=YELLOW)
 check_mark.grid(column=1, row=3)
 
-window.after(1000, )
+window.after(1000)
 
 window.mainloop()

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d25fc22-e84c-40f3-97f7-bbca989c0274" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Day 28  Tkinter, Pomodoro GUI Application.py" afterDir="false" />
+    <list default="true" id="2d25fc22-e84c-40f3-97f7-bbca989c0274" name="Changes" comment="day 27 FINITE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 27 GUI wih Tkinter &amp; Funtion Arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 27 GUI wih Tkinter &amp; Funtion Arguments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 28  Tkinter, Pomodoro GUI Application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 28  Tkinter, Pomodoro GUI Application.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +52,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flask_mongo_db_user_login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Phensic_Twitter" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Day 28  Tkinter, Pomodoro GUI Application">
+  <component name="RunManager" selected="Python.Day 29 GUI Password Manager">
     <configuration name="Day 23 Turtle Crossing Road" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -162,7 +161,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day 25 weather_data_csv.csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Day 29 GUI Password Manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -174,7 +173,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="C:\Users\Phensic002\OneDrive\Documents\GitHub\100 Days of Python\day 25 weather_data_csv.csv" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 29 GUI Password Manager.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Day 29 GUI Password Manager" />
         <item itemvalue="Python.Day 28  Tkinter, Pomodoro GUI Application" />
         <item itemvalue="Python.Day 27 GUI wih Tkinter &amp; Funtion Arguments" />
         <item itemvalue="Python.Day 26 Lists and Dictionary Comp" />
         <item itemvalue="Python.Day 25 CSV and Pandas Library" />
-        <item itemvalue="Python.day 25 weather_data_csv.csv" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643829756641</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="day 27 FINITE">
+      <created>1643891321461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643891321461</updated>
+    </task>
+    <task id="LOCAL-00009" summary="day 27 FINITE">
+      <created>1643891413310</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643891413311</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,6 +273,7 @@
     <MESSAGE value="up till day 26 added" />
     <MESSAGE value="day 26/27" />
     <MESSAGE value="day 27" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 27" />
+    <MESSAGE value="day 27 FINITE" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 27 FINITE" />
   </component>
 </project>

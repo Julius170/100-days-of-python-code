@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d25fc22-e84c-40f3-97f7-bbca989c0274" name="Changes" comment="day 27 FINITE">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day 28  Tkinter, Pomodoro GUI Application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 28  Tkinter, Pomodoro GUI Application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 29 GUI Password Manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 29 GUI Password Manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 30 Errors, Excepttions and JSON Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 30 Errors, Excepttions and JSON Data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -92,3 +92,5 @@ check_mark.grid(column=1, row=3)
 window.after(1000)
 
 window.mainloop()
+
+# FINITE

@@ -14,8 +14,6 @@ window.config(padx=20, pady=20)
 
 
 # LABELS
-
-
 # my_label = tkinter.Label(text= "I am a label", font=("Courier", 24, "bold")) 
 # my_label.pack()
 

@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d25fc22-e84c-40f3-97f7-bbca989c0274" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 01 Basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 01 Basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 02 Data Types.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 02 Data Types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 03 Control Flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 03 Control Flow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 04 Ranadomization &amp; Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 04 Ranadomization &amp; Lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 05 Loops.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 05 Loops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 06 Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 06 Functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 07 Beginning Hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 07 Beginning Hangman.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 08 Functions with inputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 08 Functions with inputs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 09 Dictionaries and Nesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 09 Dictionaries and Nesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 10 Function with Output.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 10 Function with Output.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 11 The BlackJack Capstone project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 11 The BlackJack Capstone project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 12 Scope &amp; Number Guessing Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 12 Scope &amp; Number Guessing Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 13 Debugging Finding and Fixing Errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 13 Debugging Finding and Fixing Errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 14 Higher Lower Game Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 14 Higher Lower Game Project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 15 Local Development Environment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 16 Object-Oriented Programming.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 17 Creating Classes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 18 Turtle graphics, Tuples and Modules.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 19  T Graphics, Event Listeners, State &amp; Multiple Instances.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 33 API Endpoints and Parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 33 API Endpoints and Parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hisrt's_image.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="2d25fc22-e84c-40f3-97f7-bbca989c0274" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

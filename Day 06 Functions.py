@@ -1,12 +1,10 @@
 # FUNCTIONS
-# CODE BLOCKS
+# CODE BLCKS 
 # WHILE LOOPS
 
 
 
 # FUNCTIONS
-
-
 def my_function():
     print("Hello")
     print("Bye")

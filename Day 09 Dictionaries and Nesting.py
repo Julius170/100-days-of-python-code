@@ -1,13 +1,15 @@
-# DICTIONRiES AND NESTING
-programming_dictionary = {"Bug": "An error in a program that prevents the program from running as expected.",
-                          "function": "A piece of code that you can easily call over and over again.",
-                          "Loop": "The action of doing something over and over again"}
+# DICTIONARiES AND NESTING
+programming_dictionary = {
+    "Bug": "An error in a program that prevents the program from running as expected.",
+    "function": "A piece of code that you cann easily call over and over agian.",
+}
 
 
 # RETRIEVING ITEMS FROM THE DICTIONARY.
 # print(programming_dictionary["Bug"])
 
 # ADDING NEW ITEMS TO DICTIONARY.
+programming_dictionary["Loop"] = "The action of doing something over and over again"
 
 # print(programming_dictionary)
 
@@ -18,19 +20,19 @@ empty_dictionary = {}
 # programming_dictionary = {}
 # print(programming_dictionary)
 
-# EDITING AN ITEM IN THE DICTIONARY
-programming_dictionary["Bug"] = "A moth in your computer."
+# EDITTING AN ITEM IN THE DICTIONARY
+programming_dictionary["Bug"] =  "A moth in your computer."
 
 # print(programming_dictionary)
 
 
 # LOOPING THROUGH A DICTIONARY
 for key in programming_dictionary:
-    print(key)
+    print (key)
     print(programming_dictionary[key])
     
     
-# GRADING PROGRAM EXERCISE
+# GRADING PRORGAM EXERCISE
 
 student_scores = {
     "Harry": 81,
@@ -45,4 +47,4 @@ for key in student_scores:
         print(student_scores[key])
         
         
-# FINITE
+        # FINIRE

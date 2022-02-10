@@ -3,25 +3,29 @@
 
 import random
 
-word_list = ["baboon", "camel", "aardvark"]
+word_list = ["baboon", "camel", "ardvark"]
 
 chosen_word = random.choice(word_list)
 word_len = len(chosen_word)
 
+    
 lives = 6
+ 
 
 display = []
 dash = "_"
 for keys in chosen_word:
     display += dash
-print(display)
+print (display)
+
+
 
 end_of_game = False
 while not end_of_game:
     guess = input("Guess a word? ").lower()
 
     if guess in display:
-        print(f"You've already guessed the word {guess}")
+        print(f"You've already quesssed the word {guess}") 
     for position in range(word_len):
         # print (position)    
         letter = chosen_word[position]
@@ -40,7 +44,14 @@ while not end_of_game:
         end_of_game = True
         print("You Win!")
 
+
+
+
+
+
+
+
 # print (word_len)
 
 
-# FINITE
+# FINIRE

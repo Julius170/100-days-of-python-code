@@ -1,6 +1,7 @@
+
 # CONDITIONAL STATEMENTS
 # LOGICAL OPERATORS
-# CODE BLOCKS AND SCOPE
+# CODE BLOOCKS AND SCOPE
 
 
 # EXERCISE=> ODD OR EVEN
@@ -11,26 +12,28 @@ if (number % 2) == 0:
 else:
     print("The number you entered is an odd number! \n")
 
-# EXERCISE=> A MODIFIED BMI CALCULATOR
-weight = int(input("Enter your weight in kg: "))
-height = float(input("Enter your height in meter: "))
 
-bmi = weight / (height ** 2)
+# EXERCISE=> A MODIFIED BMI CALCULATOR
+weigth = int(input("Enter your weigth in kg: "))
+heigth = float(input("Enter your heigth in meter: "))
+
+bmi = weigth/(heigth ** 2)
 bmi_result = int(bmi)
 
-print(f"\nYour BMI is {round(bmi_result, 2)} therefore:\n")
+print (f"\nYour BMI is {round(bmi_result, 2)} therefore:\n")
 if bmi_result < 18.5:
-    print("Oh wow! You're seem to be UNDERWEIGHT,\n That's not really good!\n ")
+    print("Oh wow! You're seem to be UNDERWEITGH,\n That's not really good!\n ")
 elif bmi_result < 25:
-    print("Congratulation!, You're within the NORMAL weight range,\n That's Awesome!\n")
+    print("Congratulation!, You're within the NORMAL weigth range,\n That's Awesome!\n")
 elif bmi_result < 30:
-    print("Hey!, Your a little OVERWEIGHT,\n You should be careful onward!\n")
+    print("Hey!, Your a little OVERWEIGTH,\n You should be careful onward!\n")
 elif bmi_result < 35:
     print("Oh Boy!, You're OBESE,\n You've got a lot of work to do Pal!\n")
 else:
     print("Oh My!, Your are CLINICALLY OBESE,\n That's not good!\n")
 
-# EXERCISE=> IS LEAP YEAR EXERCISE
+
+#EXERCISE=> IS LEAP YEAR EXERCISE
 # WRITE A PROGRAM THAT WORKS OUT IF THE GIVEN YEAR IS A LEAO YEAR.
 # A NORMAL YEAR HAS 365 DAYS, LEAP YEARS HAVE 366, WITH AN EXTRA DAY IN FEBURARY.
 
@@ -45,8 +48,8 @@ year4 = year % 4
 year100 = year % 100
 year400 = year % 400
 
-if year4 == 0 and year400 == 0:
-    print(f"{year} is a Leap Year.")
+if year4 == 0 and year400 == 0 :
+    print (f"{year} is a Leap Year.")
 else:
     print(f"{year} is not a Leap Year.")
 
@@ -64,10 +67,12 @@ else:
 #     print(f"Not Leap Year.")
 
 
+
+
 # EXERCISE=> PAYING FOR A RIDE IN THE PARK
 
-height = int(input("How tall are you (cm)? "))
-if height >= 120:
+heigth = int(input("How tall are you (cm)? "))
+if heigth >= 120:
     age = int(input("How old are you? \n"))
 
     if age < 12:
@@ -86,7 +91,7 @@ if height >= 120:
 
     picture = input("would you like to take photos? Y or N? ")
     if picture == "Y":
-        print(f"Your bill will be: ${bill * ticket + 3}\n")
+        print(f"Your bill will be: ${bill * ticket + 3 }\n")
     elif picture == "N":
         print(f"Your bill will be: ${bill * ticket}\n")
     else:
@@ -94,6 +99,10 @@ if height >= 120:
 
 else:
     print("Sorry Pal!, you're not tall enough, ticket cannot be sold!.\n")
+
+
+
+
 
 # EXERCISE 3.4 => PIZZA ORDER EXERCISE
 
@@ -105,26 +114,28 @@ pepperoni = input("Would you like the Pepperoni topping? Y or N \n")
 
 cheese = input("Would you like Extra Cheese? Y or N \n")
 
+
 bill = 0
-if size == "S":
+if size == "S" :
     bill += 15
-elif size == "M":
+elif size == "M" :
     bill += 20
-elif size == "L":  # NB=> "ELSE" IS NOT NECESSARY WITH "ELIF"
+elif size == "L":          # NB=> "ELSE" IS NOT NECCESARY WITH "ELIF"
     bill += 25
 else:
     print("Incorrect Input!")
 
 if pepperoni == "Y":
     if size == "S":
-        bill += 2
+        bill +=2
     else:
-        bill += 3
+        bill+=3
 
 if cheese == "Y":
-    bill += 1
+    bill +=1
 
 print(f"Your final bill is ${bill}")
+
 
 # LOVE CALCULATOR EXERCISE=>
 print("Welcome to the Love Calculator!")
@@ -138,13 +149,13 @@ t = Lovers_Name.count("t")
 r = Lovers_Name.count("r")
 u = Lovers_Name.count("u")
 e = Lovers_Name.count("e")
-true = (t + r + u + e)
+true = (t+r+u+e)
 
 l = Lovers_Name.count("l")
 o = Lovers_Name.count("o")
 v = Lovers_Name.count("v")
 e = Lovers_Name.count("e")
-love = (l + o + v + e)
+love = (l+o+v+e)
 
 total = int(str(true) + str(love))
 
@@ -157,17 +168,19 @@ elif total >= 40 or total < 50:
 else:
     print(f"Your score is {total}%")
 
+
 # FINAL EXERCISE=> DAY 3 FINAL PROJECT: TREASURE HAUNTING
 # MY SOLUTION
-print("Welcome to Treasure Hint Island, Your mission is to find the treasure.")
+print("Welcome to Treasure Haint Island, Your mission is to find the treasure.")
 
 turn = input("Would you like to go left or right? ")
-if turn == "right":
+if turn  == "right":
     print("Great Job! \nkeep moving...\n")
 elif turn == "left":
     print("Oops! You're stuck in a trap, \nGame Over!")
 else:
     print("Oops!")
+
 
 choice = input("Would you like to wait or go swim? ")
 if choice == "wait":
@@ -176,6 +189,7 @@ elif choice == "swim":
     print("Oh my! You didn't make it. \n Try Again! ")
 else:
     print("Huh!!!...")
+
 
 door = input("What colour of door would you like to open? ")
 if door == "red":
@@ -187,25 +201,23 @@ elif door == "yellow":
 else:
     print("No Answer for that Pal!!!...")
 
+
 # COURSE'S SOLUTION:
 
-print("Welcome to Treasure Island")
+print ("Welcome to Treasure Island")
 print("Your mission is to find the treasure.\n")
 choice1 = input("you're at a crossroad, where do want to go to? Type 'left' or 'right' \n").lower()
 
 if choice1 == "left":
-    choice2 = input(
-        "You've come  to a lake, where do you wnt to go, Type 'wait' to wait for a boat. Type 'swim' ro swim across.\n").lower()
+    choice2 = input("You've come  to a lake, where do you wnt to go, Type 'wait' to wait for a boat. Type 'swim' ro swim across.\n").lower()
     if choice2 == "wait":
-        choice3 = input(
-            "You arrived at the island unharmed. There is a house with 3 doors, one yellow, and one blue. \nWhat "
-            "coloured door would you like to open? \n")
+        choice3 = input("You arrived at the island unharmed. There is a house with 3 doors, one yellow, and one blue. \nWhat coloured door would you like to open? \n")
         if choice3 == "red":
             print("It's a room full of fire. Game Over\n")
         elif choice3 == "yellow":
             print("You found  the treasure. Your Win!\n")
         elif choice3 == "blue":
-            print("You've entered aa room of beasts. Game Over.\n")
+                print("You've entered aa room of beasts. Game Over.\n")
         else:
             print("You chose a dor that doesn't exist. Game Over.\n")
     else:
@@ -213,4 +225,4 @@ if choice1 == "left":
 else:
     print("You fell into a hole Game Over.\n")
 
-# FINITE
+# FINIRE

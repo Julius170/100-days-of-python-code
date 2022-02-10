@@ -30,6 +30,9 @@ import random
 #         print("You Win.") 
 #         attempt = 0
 #     print(f"You have {attempt} attempts remaining to guess the number.")
+    
+
+
 
 
 # COURSES SOLUTION
@@ -40,17 +43,19 @@ HARD_LEVEL_TURNS = 5
 turn = 0
 
 
+    
+
 def check_answer(guess, answer, turn):
     """Checks answer against guess. Returns the number of turns remaining."""
     if guess > answer:
         print("Too high.")
-        return turn - 1
+        return  turn - 1
     elif guess < answer:
         print("Too low.")
         return turn - 1
     else:
         print(f"You got it! The answer was {answer}")
-
+        
 
 def set_difficulty():
     level = input("Choose a difficulty. Type 'easy' or 'hard': ")
@@ -58,9 +63,8 @@ def set_difficulty():
         return EASY_LEVEL_TURNS
     else:
         return HARD_LEVEL_TURNS
-
-
-def game():
+            
+def game():            
     print("Welcome to the Guessing Game.")
     print("I'm thinking of a between 1 and 100.")
     answer = randint(1, 100)
@@ -73,6 +77,7 @@ def game():
 
         guess = int(input("Make a guess: "))
 
+
         turn = check_answer(guess, answer, turn)
         if turn == 0:
             print("You've run out of guesses, you lose.")
@@ -80,7 +85,6 @@ def game():
         elif guess != answer:
             print("Guess again.")
 
-
 game()
 
-# FINITE
+# FINIRE

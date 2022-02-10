@@ -54,8 +54,6 @@ MY_PASSWORD = "3c7hL#Uyxn~-zYu"
 # API PARAMETERS
 
 
-
-
 MY_LAT = 6.524379
 MY_LNG = 3.379206
 
@@ -91,23 +89,23 @@ def is_night():
     response.raise_for_status()
 
     data = response.json()
-    print(sunrise.split("T")[1].split(":")[0])
-    print(sunset.split("T")[1].split(":")[0])
+    print(response.sunrise.split("T")[1].split(":")[0])
+    print(response.sunset.split("T")[1].split(":")[0])
 
 
     time_now = datetime.now()
     
 
-    if time_now >= sunset or time_now <= sunrise:
+    if time_now >= response.sunset or time_now <= response.sunrise:
         return True
 
 
 while True:
-        time.sleep(60)
+    time.sleep(60)
     if is_iss_above() and is_night():
         connection = smtplib.SMTP("smtp.yahoo.com")
         connection.starttls()
-        connnection.login(MY_EMAIL, MY_PASSWORD)
+        connection.login(MY_EMAIL, MY_PASSWORD)
         connection.sendmail(
             from_addr = MY_EMAIL,
             to_addr = MY_EMAIL,

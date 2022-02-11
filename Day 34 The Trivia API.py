@@ -1,16 +1,25 @@
 # THE TRIVIA API AND THE QUIZZLER APP
+from cgitb import text
+from tkinter import font
 import requests
 import html 
 from  tkinter import *
 
 
+THEME_COLOR = "#375362"
 class QuizInterface:
     
-    def __init__(self, window):
+    def __init__(self):
         self.window = Tk()
+        self.window.title("The Quizzler")
+        self.window.config(padx=20, pady=20, bg=THEME_COLOR)
+        self.label = Label(text= "Score: 0 ", font=("white", 20, "italic"))
+        self.label.grid(row=0, column=1)
 
-        self.windoe
-        self.window.mainloop()
+        canvas =Canvas(text= "", font= ("Ariel", 20, "italic")) 
+        
+        
+        self.window.mainloop
 
 
 parameters = {
@@ -89,7 +98,6 @@ print(f"Your final score was: {quiz.score}/{quiz.question_number}")
 
 # GUI INTERFACE
 
-THEME_COLOR = "#375362"
 
 
 

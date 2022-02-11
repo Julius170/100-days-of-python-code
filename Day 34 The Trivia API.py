@@ -2,34 +2,33 @@
 from cgitb import text
 from tkinter import font
 import requests
-import html 
-from  tkinter import *
-
+import html
+from tkinter import *
 
 THEME_COLOR = "#375362"
+
+
 class QuizInterface:
-    
+
     def __init__(self):
         self.window = Tk()
         self.window.title("The Quizzler")
         self.window.config(padx=20, pady=20, bg=THEME_COLOR)
-        self.label = Label(text= "Score: 0 ", font=("white", 20, "italic"))
+        self.label = Label(text="Score: 0 ", font=("white", 20, "italic"))
         self.label.grid(row=0, column=1)
 
-        self.canvas = Canvas(width= 300, height= 250, bg="white") 
+        self.canvas = Canvas(width=300, height=250, bg="white")
         self.question_text = self.canvas.create_text(150, 125, text="Some Question Text", fill=THEME_COLOR)
-        self.canvas.grid(row=0, column= 2, columnspan= 2, padx=34)
-        
-        true_image = PhotoImage (file= images/true.png)
-        self.true_button= Button(true=true_image, highlightthickness=0)
-        self.true_button.grid(row= 2, column= 0)
+        self.canvas.grid(row=0, column=2, columnspan=2, padx=34)
+
+        true_image = PhotoImage(file=images / true.png)
+        self.true_button = Button(true=true_image, highlightthickness=0)
+        self.true_button.grid(row=2, column=0)
 
         false_image = PhotoImage(file="images/false.png")
         self.false_button = Button(image=false_image, highlightthickness=0)
-        self.false_button.grid(row=2, column= 1) 
-    
-    
-    
+        self.false_button.grid(row=2, column=1)
+
         self.window.mainloop
 
 
@@ -38,13 +37,11 @@ parameters = {
     "type": "boolean"
 }
 
-response = requests.get (url="https://opentdb.com/api.php", params=parameters)
+response = requests.get(url="https://opentdb.com/api.php", params=parameters)
 response.raise_for_status()
 
 data = response.json()
 question_data = data["results"]
-
-
 
 
 # TRUTH OR FALSE GAME
@@ -56,7 +53,6 @@ class Question:
     def __init__(self, text, answer):
         self.text = text
         self.answer = answer
-
 
 
 Question_bank = []
@@ -98,24 +94,10 @@ class QuizBrain:
 quiz = QuizBrain(Question_bank)
 quiz_ui = QuizInterface()
 
-
-
 # while quiz.still_has_question():
 #     quiz.next_question()
 
 print("You've completed the quiz")
 print(f"Your final score was: {quiz.score}/{quiz.question_number}")
 
-
 # GUI INTERFACE
-
-
-
-
-
-
-
-
-
-
-

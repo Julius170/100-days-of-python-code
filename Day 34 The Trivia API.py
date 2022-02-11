@@ -8,28 +8,6 @@ from tkinter import *
 THEME_COLOR = "#375362"
 
 
-class QuizInterface:
-
-    def __init__(self):
-        self.window = Tk()
-        self.window.title("The Quizzler")
-        self.window.config(padx=20, pady=20, bg=THEME_COLOR)
-        self.label = Label(text="Score: 0 ", font=("white", 20, "italic"))
-        self.label.grid(row=0, column=1)
-
-        self.canvas = Canvas(width=300, height=250, bg="white")
-        self.question_text = self.canvas.create_text(150, 125, text="Some Question Text", fill=THEME_COLOR)
-        self.canvas.grid(row=0, column=2, columnspan=2, padx=34)
-
-        true_image = PhotoImage(file="images/true.png")
-        self.true_button = Button(true=true_image, highlightthickness=0)
-        self.true_button.grid(row=2, column=0)
-
-        false_image = PhotoImage(file="images/false.png")
-        self.false_button = Button(image=false_image, highlightthickness=0)
-        self.false_button.grid(row=2, column=1)
-
-        self.window.mainloop
 
 
 parameters = {
@@ -74,8 +52,10 @@ class QuizBrain:
         current_question = self.question_list[self.question_number]
         self.question_number += 1
         question_text = html.unescape(self.current_question.text)
-        user_answer = input(f"Q{self.question_number}: {question_text} (True/False):")
-        self.check_answer(user_answer, current_question.answer)
+        return f"Q.{self.question_number}: {question_text}" 
+
+        # user_answer = input(f"Q.{self.question_number}: {question_text} (True/False):")
+        # self.check_answer(user_answer, current_question.answer)
 
     def still_has_question(self):
         return self.question_number < len(self.question_list)
@@ -101,3 +81,35 @@ print("You've completed the quiz")
 print(f"Your final score was: {quiz.score}/{quiz.question_number}")
 
 # GUI INTERFACE
+
+
+class QuizInterface:
+
+    def __init__(self, quiz_brain: QuizBrain):
+        quiz = quiz_brain 
+
+        self.window = Tk()
+        self.window.title("The Quizzler")
+        self.window.config(padx=20, pady=20, bg=THEME_COLOR)
+        self.label = Label(text="Score: 0 ", font=("white", 20, "italic"))
+        self.label.grid(row=0, column=1)
+
+        self.canvas = Canvas(width=300, height=250, bg="white")
+        self.question_text = self.canvas.create_text(150, 125, text="Some Question Text", fill=THEME_COLOR, font= ("Ariel", 20, "italic"))
+        self.canvas.grid(row=0, column=2, columnspan=2, padx=34)
+
+        true_image = PhotoImage(file="images/true.png")
+        self.true_button = Button(true=true_image, highlightthickness=0)
+        self.true_button.grid(row=2, column=0)
+
+        false_image = PhotoImage(file="images/false.png")
+        self.false_button = Button(image=false_image, highlightthickness=0)
+        self.false_button.grid(row=2, column=1)
+
+        self.21
+
+        self.window.mainloop()
+
+    def get_next_question(self):
+        q_text = self.quiz.next_question()
+        self.canvas.itemcongif(self, question, text )

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a36202f-e00c-4b16-924f-d70e0ec273ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Day 34 The Trivia API.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 34 The Trivia API.py" afterDir="false" />
-    </list>
+    <list default="true" id="8a36202f-e00c-4b16-924f-d70e0ec273ee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +53,25 @@
     </recent_temporary>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="day 34 init">
+      <created>1644548997405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644548997405</updated>
+    </task>
+    <task id="LOCAL-00002" summary="day 34 init">
+      <created>1644549137095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644549137095</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day 34 init" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 34 init" />
   </component>
 </project>

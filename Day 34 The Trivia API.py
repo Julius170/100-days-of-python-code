@@ -9,38 +9,6 @@ THEME_COLOR = "#375362"
 
 
 
-
-parameters = {
-    "amount": 10,
-    "type": "boolean"
-}
-
-response = requests.get(url="https://opentdb.com/api.php", params=parameters)
-response.raise_for_status()
-
-data = response.json()
-question_data = data["results"]
-
-
-# TRUTH OR FALSE GAME
-
-
-# TODO 1. CREATE A QUESTION CLASS FROM SCRATCH
-class Question:
-
-    def __init__(self, text, answer):
-        self.text = text
-        self.answer = answer
-
-
-Question_bank = []
-for questions in question_data:
-    question_text = questions["question"]
-    question_answer = questions["correct_answer"]
-    new_question = Question(question_text, question_answer)
-    Question_bank.append(new_question)
-
-
 class QuizBrain:
 
     def __init__(self, q_list):
@@ -69,22 +37,9 @@ class QuizBrain:
         print(f"The correct answer is {correct_answer}.")
         print(f"Your current score is: {self.score}/{self.question_number}")
         print("\n")
-
-
-quiz = QuizBrain(Question_bank)
-quiz_ui = QuizInterface()
-
-# while quiz.still_has_question():
-#     quiz.next_question()
-
-print("You've completed the quiz")
-print(f"Your final score was: {quiz.score}/{quiz.question_number}")
-
 # GUI INTERFACE
 
-
 class QuizInterface:
-
     def __init__(self, quiz_brain: QuizBrain):
         quiz = quiz_brain 
 
@@ -103,13 +58,84 @@ class QuizInterface:
         self.true_button.grid(row=2, column=0)
 
         false_image = PhotoImage(file="images/false.png")
-        self.false_button = Button(image=false_image, highlightthickness=0)
+        self.false_button = Button(image=false_image, highlightthickness=0 command=self.check_answer)
         self.false_button.grid(row=2, column=1)
 
-        self.21
+        self.get_next
 
         self.window.mainloop()
 
     def get_next_question(self):
         q_text = self.quiz.next_question()
-        self.canvas.itemcongif(self, question, text )
+        self.canvas.itemcongif(self.questions_text, text=q_text)
+
+    def true_pressed(self):
+        q_text = self.quiz.next_question()
+        self.canvas.itemconfig(self, self.question_text, text=q_text)
+    def false_pressed(self)
+        pass
+
+
+    parameters = {
+    "amount": 10,
+    "type": "boolean"
+    }
+
+    response = requests.get(url="https://opentdb.com/api.php", params=parameters)
+    response.raise_for_status()
+
+    data = response.json()
+    question_data = data["results"]
+
+
+# TRUTH OR FALSE GAME
+
+
+# TODO 1. CREATE A QUESTION CLASS FROM SCRATCH
+class Question:
+
+    def __init__(self, text, answer):
+        self.text = text
+        self.answer = answer
+
+
+           Question_bank = []
+            for questions in question_data:
+                question_text = questions["question"]
+                question_answer = questions["correct_answer"]
+                new_question = Question(question_text, question_answer)
+                Question_bank.append(new_question)
+
+
+
+quiz = QuizBrain(Question_bank)
+quiz_ui = QuizInterface()
+
+# while quiz.still_has_question():
+#     quiz.next_question()
+
+print("You've completed the quiz")
+print(f"Your final score was: {quiz.score}/{quiz.question_number}")
+
+
+
+
+
+# # TYPE HINTS AND  ARROWS
+# app: int
+# name: str
+# height: float
+# is_button: bool 
+
+# def police_check(age):
+#         if age > 18:
+#             can_drive = True
+#             return can_drive
+#         else:
+#             can_drive = False
+#             return can_drive
+
+
+# print(police_check(16))
+
+

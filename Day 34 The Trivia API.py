@@ -1,6 +1,5 @@
 # THE TRIVIA API AND THE QUIZZLER APP
-from cgitb import text
-from tkinter import font
+
 from numpy import False_
 import requests
 import html

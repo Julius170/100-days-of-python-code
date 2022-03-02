@@ -1,0 +1,26 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E712" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="config.eZ5J3ZraKrzSa7gpwYRvrm4DTZvOyz0fop6W5kZY4drqrTGTU" />
+          <option value="config.AAAAAAAAAAAAAAAAAAAAAAlPYwEAAAAAQN0ksmMq7hEzfFkNPxz" />
+          <option value="config.Vm19iJjowsukHmGwakkTw2cIpObuqIa0IhH9eBeTI6SjcgRYqd" />
+          <option value="config.JbCwPel8XRxEZb2L4K9paAp0T" />
+          <option value="config.QjAtMVJ6Ym12elBfV0QtX2JvTTI6MTpjaQ" />
+          <option value="config.DcJjt50YIFKZJaCLS6Q9AipPBTd4MLHQAIBzF3giLyDv2iESgkj" />
+          <option value="config.Fcm1" />
+          <option value="config.B2Ek" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
